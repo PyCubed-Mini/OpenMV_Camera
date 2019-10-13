@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name openmv3-eagle-import)(type Legacy)(uri ${KIPRJMOD}/openmv3-eagle-import.lib)(options "")(descr ""))
+)

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:base-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 20138 13768
@@ -661,16 +662,12 @@ Wire Wire Line
 	9000 7100 9800 7100
 Text Label 9300 7100 0    70   ~ 0
 SDIO_CMD
-Wire Wire Line
-	9000 5300 9800 5300
 Text Label 9300 5300 0    70   ~ 0
 LED_G
 Wire Wire Line
 	12000 4700 11600 4700
 Text Label 11600 4700 0    70   ~ 0
 LED_G
-Wire Wire Line
-	9000 5400 9800 5400
 Text Label 9300 5400 0    70   ~ 0
 LED_B
 Wire Wire Line
@@ -681,8 +678,6 @@ Wire Wire Line
 	12000 4500 11600 4500
 Text Label 11600 4500 0    70   ~ 0
 LED_R
-Wire Wire Line
-	9000 5200 9800 5200
 Text Label 9300 5200 0    70   ~ 0
 LED_R
 Wire Wire Line
@@ -2322,4 +2317,10 @@ Wire Notes Line
 	15300 700  15300 6700
 Wire Notes Line
 	11100 3500 11100 4700
+Wire Wire Line
+	9000 5200 9800 5200
+Wire Wire Line
+	9000 5400 9800 5400
+Wire Wire Line
+	9000 5300 9800 5300
 $EndSCHEMATC
