@@ -2,6 +2,20 @@ DCMI_PDWN: MCU end
 - V4: connects to PD7
 - V3: connects to PB5
 
+SPI3_SSEL:
+- V4: Goes from PA15 on MCU to pin 11 on connector
+- V3: Doesn't exist on V3/not used
+
+SPI3_SSCLK/TRACESWO:
+- V4: From PB3 to pin 13 on connector
+
+SPI3_MISO:
+- V4: From PB4 to connector pin 15
+
+SPI3_MOSI:
+- V4: From PB5 to connector pin 17
+
+
 DCMI_FSIN/ FSIN:
 - V4: Called 'DCMI_FSIN' (same name at MCU and connector)
 - V3: Called 'FSIN' (same name at MCU and connector)
@@ -14,5 +28,5 @@ DCMI_D(0:7):
 - Assume they do so that software didn't haven't to be changed from V3-V4 
 - Can possibly find schematic for separate camera chip used on MV4 to confirm
 
-PA15, PB3, PB4, PB5 on MV4, are different to MV3
-only PB5 (DCMI_PWDN) appears to affect the camera module though
+PA15, PB3, PB4, PB5 on MV4, are different to MV3 as stated above
+Unclear whether the SPI's affect the camera module and why v4 needs them.
