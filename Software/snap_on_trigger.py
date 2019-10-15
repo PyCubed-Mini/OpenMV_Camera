@@ -20,12 +20,22 @@ BLUE_LED_PIN = 3
 pyb.LED(RED_LED_PIN).on()
 
 # set up digital SPI interface, with camera as slave and MCU as master
-spi = SPI(2, SPI.SLAVE) # (2, SPI.SLAVE, baudrate=1000000, polarity=1, phase=0)
-# spi.send('hello')
-spi.recv(5) # receive 5 bytes on the bus
-print(spi.recv(5))
-# spi.send_recv('hello') # send a receive 5 bytes
+spi = SPI(2, SPI.SLAVE, polarity=0, phase=0)
+# spi = SPI(2, SPI.MASTER, baudrate = 115200, polarity=1, phase=0)
+pyb.Pin("P3", pyb.Pin.IN, pull=pyb.Pin.PULL_UP)
 
+# spi.send(b'heyyy')  # respond
+# spi.send('hello')
+buf = bytearray(5)
+# print(buf)
+
+# spi.recv(buf)  # for receive only
+spi.send_recv(b'heyyy', buf)
+
+# print(buf)
+print(''.join(chr(b) for b in buf))
+# for i in range(5):
+#     print(buf[i])
 
 # turn SPI indicator off
 pyb.LED(RED_LED_PIN).off()
@@ -34,7 +44,7 @@ pyb.LED(RED_LED_PIN).off()
 sensor.reset() # initialize the camera sensor
 sensor.set_pixformat(sensor.RGB565) # or sensor.GRAYSCALE
 sensor.set_framesize(sensor.VGA) # or sensor.QVGA (or others)
-sensor.skip_frames(time = 2000) # let new settings take effect
+sensor.skip_frames(time = 500) # let new settings take effect
 
 # flash light to signal camera activation
 pyb.LED(BLUE_LED_PIN).on()
