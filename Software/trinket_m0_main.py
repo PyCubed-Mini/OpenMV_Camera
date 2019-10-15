@@ -31,11 +31,11 @@ led.direction = Direction.OUTPUT
 # touch = touchio.TouchIn(board.D3)
 
 # set up SPI communication
-spi = busio.SPI(board.SCK, MISO=board.MISO)
+spi = busio.SPI(board.SCK, MISO=board.MISO, MOSI=board.MOSI)
 cs = DigitalInOut(board.D1)  # USE PIN 1
 # cs.direction = Direction.OUTPUT
 # cs.value = True
-device = SPIDevice(spi, cs, baudrate=5000000, polarity=0, phase=0)
+device = SPIDevice(spi, cs, baudrate=115200, polarity=0, phase=0)
 
 ######################### HELPERS ##############################
 
@@ -78,16 +78,30 @@ while True:
   i = (i+1) % 256  # run from 0 to 255
   
   if (i % 10) == 0:
-  
-      while not spi.try_lock():
-          pass
-      	
-      try:
-          spi.configure(baudrate=1000000, phase=0, polarity=0)
-          cs.value = False
-          spi.write('hello')
-          cs.value = True
-      finally:
-          spi.unlock()
+    
+      with device:
+          # spi.write(b'hello')
+          buf = bytearray(5)
+          # spi.write(b'hello')  # for writing only
+		  # spi.readinto(buf)  # for reading only
+          spi.write_readinto(b'hello', buf)
+		  
+		  # strange workaround to enable printing bytearray buf
+          # print(buf)
+          print(''.join(chr(b) for b in buf))
+		  
+		  # slow down the process
+          time.sleep(0.1)
+      
+      # while not spi.try_lock():
+      #     pass
+      # 	
+      # try:
+      #     spi.configure(baudrate=1000000, phase=0, polarity=0)
+      #     cs.value = False
+      #     spi.write(b'hello')
+      #     cs.value = True
+      # finally:
+      #     spi.unlock()
 		  
   time.sleep(0.01) # make bigger to slow down
