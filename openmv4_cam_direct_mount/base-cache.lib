@@ -36,19 +36,6 @@ X 2 5 200 0 100 L 50 0 4 0 P
 ENDDRAW
 ENDDEF
 #
-# base-eagle-import_9774030151R
-#
-DEF base-eagle-import_9774030151R ~ 0 40 Y Y 1 L N
-F0 "" 0 0 50 H I C CNN
-F1 "base-eagle-import_9774030151R" 0 0 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 0 100 1 0 10 N
-C 0 0 200 1 0 10 N
-ENDDRAW
-ENDDEF
-#
 # base-eagle-import_CAP0603-CAP
 #
 DEF base-eagle-import_CAP0603-CAP C 0 40 Y Y 1 L N
