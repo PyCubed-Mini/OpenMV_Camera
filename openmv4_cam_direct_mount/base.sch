@@ -174,17 +174,6 @@ Wire Wire Line
 Text Label 8000 2400 0    10   ~ 0
 GND
 Wire Wire Line
-	13000 2900 11500 2900
-Wire Wire Line
-	13000 2600 11500 2600
-Wire Wire Line
-	11500 2600 11500 2900
-Wire Wire Line
-	11500 2900 11500 3100
-Connection ~ 11500 2900
-Text Label 13000 2900 0    10   ~ 0
-GND
-Wire Wire Line
 	1800 7600 1800 7200
 Text Label 1800 7600 0    10   ~ 0
 GND
@@ -235,10 +224,6 @@ Wire Wire Line
 Text Label 16700 2400 0    70   ~ 0
 NRST
 Wire Wire Line
-	13000 1900 11600 1900
-Text Label 11600 1900 0    70   ~ 0
-NRST
-Wire Wire Line
 	3500 8200 2800 8200
 Text Label 2800 8200 0    70   ~ 0
 SWDIO
@@ -259,10 +244,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 6400 1800 6800
 Text Label 3000 6400 0    70   ~ 0
-BOOT0
-Wire Wire Line
-	13000 2000 11600 2000
-Text Label 11600 2000 0    70   ~ 0
 BOOT0
 Wire Wire Line
 	3500 7800 2700 7800
@@ -377,12 +358,6 @@ Wire Wire Line
 Wire Wire Line
 	13700 4600 14300 4600
 Text Label 14300 4600 0    10   ~ 0
-VCC
-Wire Wire Line
-	15000 2600 13500 2600
-Wire Wire Line
-	13500 2600 13500 1700
-Text Label 15000 2600 0    10   ~ 0
 VCC
 Wire Wire Line
 	14200 6000 14300 6000
@@ -585,17 +560,9 @@ Wire Wire Line
 Text Label 9300 5200 0    70   ~ 0
 LED_R
 Wire Wire Line
-	13000 2400 11600 2400
-Text Label 11600 2400 0    70   ~ 0
-TIM4_CH1
-Wire Wire Line
 	9000 8100 9800 8100
 Text Label 9300 8100 0    70   ~ 0
 TIM4_CH1
-Wire Wire Line
-	13000 2300 11600 2300
-Text Label 11600 2300 0    70   ~ 0
-TIM4_CH2
 Wire Wire Line
 	9000 8200 9800 8200
 Text Label 9300 8200 0    70   ~ 0
@@ -668,24 +635,12 @@ Wire Wire Line
 Text Label 2800 10000 0    70   ~ 0
 SPI2_SCLK
 Wire Wire Line
-	13600 2100 15000 2100
-Text Label 13600 2100 0    70   ~ 0
-SPI2_SCLK
-Wire Wire Line
 	3500 9700 2800 9700
 Text Label 2800 9700 0    70   ~ 0
 I2C2_SCL
 Wire Wire Line
-	15000 2300 13600 2300
-Text Label 13600 2300 0    70   ~ 0
-I2C2_SCL
-Wire Wire Line
 	3500 9800 2800 9800
 Text Label 2800 9800 0    70   ~ 0
-I2C2_SDA
-Wire Wire Line
-	15000 2400 13600 2400
-Text Label 13600 2400 0    70   ~ 0
 I2C2_SDA
 Wire Wire Line
 	3500 6100 3200 6100
@@ -733,32 +688,16 @@ Wire Wire Line
 Text Label 2800 7400 0    70   ~ 0
 DAC
 Wire Wire Line
-	15000 2500 13600 2500
-Text Label 13600 2500 0    70   ~ 0
-DAC
-Wire Wire Line
 	3500 9900 2800 9900
 Text Label 2800 9900 0    70   ~ 0
-SPI2_NSS
-Wire Wire Line
-	13600 2200 15000 2200
-Text Label 13600 2200 0    70   ~ 0
 SPI2_NSS
 Wire Wire Line
 	3500 10100 2800 10100
 Text Label 2800 10100 0    70   ~ 0
 SPI2_MISO
 Wire Wire Line
-	13600 2000 15000 2000
-Text Label 13600 2000 0    70   ~ 0
-SPI2_MISO
-Wire Wire Line
 	3500 10200 2800 10200
 Text Label 2800 10200 0    70   ~ 0
-SPI2_MOSI
-Wire Wire Line
-	13600 1900 15000 1900
-Text Label 13600 1900 0    70   ~ 0
 SPI2_MOSI
 Wire Wire Line
 	9000 7800 9800 7800
@@ -773,10 +712,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 8300 9800 8300
 Text Label 9300 8300 0    70   ~ 0
-TIM4_CH3
-Wire Wire Line
-	13000 2200 11600 2200
-Text Label 11600 2200 0    70   ~ 0
 TIM4_CH3
 Wire Wire Line
 	12400 4600 12800 4600
@@ -799,24 +734,9 @@ Connection ~ 3100 1900
 Text Label 3100 1700 0    10   ~ 0
 VIN
 Wire Wire Line
-	13000 3000 11400 3000
-Wire Wire Line
-	11400 3000 11400 2500
-Wire Wire Line
-	13000 2500 11400 2500
-Wire Wire Line
-	11400 2500 11400 1700
-Text Label 11600 2500 0    70   ~ 0
-VIN
-Connection ~ 11400 2500
-Wire Wire Line
 	1600 2200 1900 2200
 Wire Wire Line
 	6800 1900 6900 1900
-Wire Wire Line
-	13000 2100 11600 2100
-Text Label 11600 2100 0    70   ~ 0
-DCMI_FSIN
 Text Label 19350 8650 0    70   ~ 0
 DCMI_FSIN
 Wire Wire Line
@@ -1319,39 +1239,6 @@ F 3 "" H 1800 7700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:PINHD-1X8 JP2
-U 1 1 BAFA783C
-P 13100 2300
-F 0 "JP2" H 12850 2825 59  0000 L BNN
-F 1 "PINHD-1X8" H 12850 1800 59  0000 L BNN
-F 2 "base:1X08" H 13100 2300 50  0001 C CNN
-F 3 "" H 13100 2300 50  0001 C CNN
-	1    13100 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:PINHD-1X8 JP1
-U 1 1 0B60073D
-P 15100 2300
-F 0 "JP1" H 14850 2825 59  0000 L BNN
-F 1 "PINHD-1X8" H 14850 1800 59  0000 L BNN
-F 2 "base:1X08" H 15100 2300 50  0001 C CNN
-F 3 "" H 15100 2300 50  0001 C CNN
-	1    15100 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:GND #GND05
-U 1 1 5B6A58CA
-P 11500 3200
-F 0 "#GND05" H 11500 3200 50  0001 C CNN
-F 1 "GND" H 11400 3100 59  0000 L BNN
-F 2 "" H 11500 3200 50  0001 C CNN
-F 3 "" H 11500 3200 50  0001 C CNN
-	1    11500 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L base-eagle-import:VCC #P+02
 U 1 1 637B3A6A
 P 2900 4200
@@ -1371,17 +1258,6 @@ F 1 "10R" H 12950 6070 59  0000 L BNN
 F 2 "base:0603-RES" H 13000 6000 50  0001 C CNN
 F 3 "" H 13000 6000 50  0001 C CNN
 	1    13000 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:VCC #P+06
-U 1 1 4B6CF0C8
-P 13500 1700
-F 0 "#P+06" H 13500 1700 50  0001 C CNN
-F 1 "VCC" V 13400 1600 59  0000 L BNN
-F 2 "" H 13500 1700 50  0001 C CNN
-F 3 "" H 13500 1700 50  0001 C CNN
-	1    13500 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1742,28 +1618,6 @@ F 1 "MF-CON-MICROUSB-RIGHT" H 1100 2800 40  0000 L BNN
 F 2 "base:MICROUSB-RIGHT" H 1300 2400 50  0001 C CNN
 F 3 "" H 1300 2400 50  0001 C CNN
 	1    1300 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:JST_2PIN-THM-RA X4
-U 1 1 BE05CED0
-P 13100 3000
-F 0 "X4" H 12850 3225 59  0000 L BNN
-F 1 "S2B-PH-K-S(LF)(SN)" H 12850 2800 59  0000 L BNN
-F 2 "base:JST-PH-2-THM-RA" H 13100 3000 50  0001 C CNN
-F 3 "" H 13100 3000 50  0001 C CNN
-	1    13100 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:VIN #VIN03
-U 1 1 73E98C85
-P 11400 1700
-F 0 "#VIN03" H 11400 1700 50  0001 C CNN
-F 1 "VIN" V 11300 1600 59  0000 L BNN
-F 2 "" H 11400 1700 50  0001 C CNN
-F 3 "" H 11400 1700 50  0001 C CNN
-	1    11400 1700
 	1    0    0    -1  
 $EndComp
 $Comp
