@@ -174,23 +174,8 @@ Wire Wire Line
 Text Label 8000 2400 0    10   ~ 0
 GND
 Wire Wire Line
-	13000 2900 11500 2900
-Wire Wire Line
-	13000 2600 11500 2600
-Wire Wire Line
-	11500 2600 11500 2900
-Wire Wire Line
-	11500 2900 11500 3100
-Connection ~ 11500 2900
-Text Label 13000 2900 0    10   ~ 0
-GND
-Wire Wire Line
 	1800 7600 1800 7200
 Text Label 1800 7600 0    10   ~ 0
-GND
-Wire Wire Line
-	18500 9850 18500 8750
-Text Label 18500 9850 0    10   ~ 0
 GND
 Wire Wire Line
 	8600 2400 8600 2500
@@ -208,12 +193,6 @@ GND
 Wire Wire Line
 	10200 2900 10200 3100
 Text Label 10200 2900 0    10   ~ 0
-GND
-Text Label 19350 8450 0    70   ~ 0
-GND
-Text Label 19350 8850 0    70   ~ 0
-GND
-Text Label 19350 7750 0    70   ~ 0
 GND
 Wire Wire Line
 	7500 3000 7500 3100
@@ -233,10 +212,6 @@ Connection ~ 2900 6300
 Wire Wire Line
 	17900 2400 16700 2400
 Text Label 16700 2400 0    70   ~ 0
-NRST
-Wire Wire Line
-	13000 1900 11600 1900
-Text Label 11600 1900 0    70   ~ 0
 NRST
 Wire Wire Line
 	3500 8200 2800 8200
@@ -259,10 +234,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 6400 1800 6800
 Text Label 3000 6400 0    70   ~ 0
-BOOT0
-Wire Wire Line
-	13000 2000 11600 2000
-Text Label 11600 2000 0    70   ~ 0
 BOOT0
 Wire Wire Line
 	3500 7800 2700 7800
@@ -379,12 +350,6 @@ Wire Wire Line
 Text Label 14300 4600 0    10   ~ 0
 VCC
 Wire Wire Line
-	15000 2600 13500 2600
-Wire Wire Line
-	13500 2600 13500 1700
-Text Label 15000 2600 0    10   ~ 0
-VCC
-Wire Wire Line
 	14200 6000 14300 6000
 Wire Wire Line
 	14300 6000 14300 5300
@@ -411,10 +376,6 @@ VCC
 Wire Wire Line
 	2900 4300 2900 4500
 Text Label 2900 4300 0    10   ~ 0
-VCC
-Wire Wire Line
-	18500 7550 18500 7650
-Text Label 18500 7550 0    10   ~ 0
 VCC
 Wire Wire Line
 	8600 2100 8600 2000
@@ -448,13 +409,9 @@ Wire Wire Line
 	9000 5800 9700 5800
 Text Label 9300 5800 0    70   ~ 0
 DCMI_D0
-Text Label 19350 9050 0    70   ~ 0
-DCMI_D0
 Wire Wire Line
 	9000 5900 9700 5900
 Text Label 9300 5900 0    70   ~ 0
-DCMI_D1
-Text Label 19350 8950 0    70   ~ 0
 DCMI_D1
 Wire Wire Line
 	3500 7500 2800 7500
@@ -476,10 +433,6 @@ Wire Wire Line
 	3500 7900 2800 7900
 Text Label 2800 7900 0    70   ~ 0
 DCMI_RST
-Text Label 19350 8550 0    70   ~ 0
-DCMI_RST
-Text Label 19350 8750 0    70   ~ 0
-DCMI_PWDN
 Wire Wire Line
 	9000 7600 9800 7600
 Text Label 9300 7600 0    70   ~ 0
@@ -487,8 +440,6 @@ DCMI_PWDN
 Wire Wire Line
 	9000 8700 9800 8700
 Text Label 9300 8700 0    70   ~ 0
-DCMI_D2
-Text Label 19350 9250 0    70   ~ 0
 DCMI_D2
 Wire Wire Line
 	9000 8800 9800 8800
@@ -501,8 +452,6 @@ DCMI_D4
 Wire Wire Line
 	3500 9300 2800 9300
 Text Label 2800 9300 0    70   ~ 0
-DCMI_D5
-Text Label 19350 9150 0    70   ~ 0
 DCMI_D5
 Wire Wire Line
 	9000 9200 9800 9200
@@ -585,22 +534,6 @@ Wire Wire Line
 Text Label 9300 5200 0    70   ~ 0
 LED_R
 Wire Wire Line
-	13000 2400 11600 2400
-Text Label 11600 2400 0    70   ~ 0
-TIM4_CH1
-Wire Wire Line
-	9000 8100 9800 8100
-Text Label 9300 8100 0    70   ~ 0
-TIM4_CH1
-Wire Wire Line
-	13000 2300 11600 2300
-Text Label 11600 2300 0    70   ~ 0
-TIM4_CH2
-Wire Wire Line
-	9000 8200 9800 8200
-Text Label 9300 8200 0    70   ~ 0
-TIM4_CH2
-Wire Wire Line
 	17500 5400 16900 5400
 Text Label 17000 5400 0    70   ~ 0
 SDIO_D3
@@ -668,24 +601,12 @@ Wire Wire Line
 Text Label 2800 10000 0    70   ~ 0
 SPI2_SCLK
 Wire Wire Line
-	13600 2100 15000 2100
-Text Label 13600 2100 0    70   ~ 0
-SPI2_SCLK
-Wire Wire Line
 	3500 9700 2800 9700
 Text Label 2800 9700 0    70   ~ 0
 I2C2_SCL
 Wire Wire Line
-	15000 2300 13600 2300
-Text Label 13600 2300 0    70   ~ 0
-I2C2_SCL
-Wire Wire Line
 	3500 9800 2800 9800
 Text Label 2800 9800 0    70   ~ 0
-I2C2_SDA
-Wire Wire Line
-	15000 2400 13600 2400
-Text Label 13600 2400 0    70   ~ 0
 I2C2_SDA
 Wire Wire Line
 	3500 6100 3200 6100
@@ -733,32 +654,16 @@ Wire Wire Line
 Text Label 2800 7400 0    70   ~ 0
 DAC
 Wire Wire Line
-	15000 2500 13600 2500
-Text Label 13600 2500 0    70   ~ 0
-DAC
-Wire Wire Line
 	3500 9900 2800 9900
 Text Label 2800 9900 0    70   ~ 0
-SPI2_NSS
-Wire Wire Line
-	13600 2200 15000 2200
-Text Label 13600 2200 0    70   ~ 0
 SPI2_NSS
 Wire Wire Line
 	3500 10100 2800 10100
 Text Label 2800 10100 0    70   ~ 0
 SPI2_MISO
 Wire Wire Line
-	13600 2000 15000 2000
-Text Label 13600 2000 0    70   ~ 0
-SPI2_MISO
-Wire Wire Line
 	3500 10200 2800 10200
 Text Label 2800 10200 0    70   ~ 0
-SPI2_MOSI
-Wire Wire Line
-	13600 1900 15000 1900
-Text Label 13600 1900 0    70   ~ 0
 SPI2_MOSI
 Wire Wire Line
 	9000 7800 9800 7800
@@ -770,14 +675,6 @@ Text Label 9300 7700 0    70   ~ 0
 EXPST
 Wire Wire Line
 	13900 6000 13700 6000
-Wire Wire Line
-	9000 8300 9800 8300
-Text Label 9300 8300 0    70   ~ 0
-TIM4_CH3
-Wire Wire Line
-	13000 2200 11600 2200
-Text Label 11600 2200 0    70   ~ 0
-TIM4_CH3
 Wire Wire Line
 	12400 4600 12800 4600
 Wire Wire Line
@@ -799,26 +696,9 @@ Connection ~ 3100 1900
 Text Label 3100 1700 0    10   ~ 0
 VIN
 Wire Wire Line
-	13000 3000 11400 3000
-Wire Wire Line
-	11400 3000 11400 2500
-Wire Wire Line
-	13000 2500 11400 2500
-Wire Wire Line
-	11400 2500 11400 1700
-Text Label 11600 2500 0    70   ~ 0
-VIN
-Connection ~ 11400 2500
-Wire Wire Line
 	1600 2200 1900 2200
 Wire Wire Line
 	6800 1900 6900 1900
-Wire Wire Line
-	13000 2100 11600 2100
-Text Label 11600 2100 0    70   ~ 0
-DCMI_FSIN
-Text Label 19350 8650 0    70   ~ 0
-DCMI_FSIN
 Wire Wire Line
 	9000 7400 9800 7400
 Text Label 9300 7400 0    70   ~ 0
@@ -839,13 +719,9 @@ Wire Wire Line
 	3500 9100 2800 9100
 Text Label 2800 9100 0    70   ~ 0
 SPI3_MISO
-Text Label 19350 8250 0    70   ~ 0
-SPI3_MISO
 Wire Wire Line
 	3500 9200 2800 9200
 Text Label 2800 9200 0    70   ~ 0
-SPI3_MOSI
-Text Label 19350 8350 0    70   ~ 0
 SPI3_MOSI
 Wire Wire Line
 	9000 7200 9800 7200
@@ -855,8 +731,6 @@ Wire Wire Line
 	9000 7300 9800 7300
 Text Label 9300 7300 0    70   ~ 0
 GPIO2
-Text Label 19350 8050 0    70   ~ 0
-SPI3_SSEL
 Wire Wire Line
 	3500 8400 2800 8400
 Text Label 2800 8400 0    70   ~ 0
@@ -878,16 +752,6 @@ Wire Wire Line
 Connection ~ 10500 1900
 Text Label 10500 1700 0    10   ~ 0
 VDDA
-Wire Wire Line
-	19000 8200 19000 7700
-Text Label 19350 7550 0    70   ~ 0
-RSVD1
-Text Label 19350 7650 0    70   ~ 0
-RSVD2
-Text Label 19350 7850 0    70   ~ 0
-RSVD3
-Text Label 19350 7950 0    70   ~ 0
-RSVD4
 Wire Wire Line
 	6800 2500 7500 2500
 Wire Wire Line
@@ -1319,39 +1183,6 @@ F 3 "" H 1800 7700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:PINHD-1X8 JP2
-U 1 1 BAFA783C
-P 13100 2300
-F 0 "JP2" H 12850 2825 59  0000 L BNN
-F 1 "PINHD-1X8" H 12850 1800 59  0000 L BNN
-F 2 "base:1X08" H 13100 2300 50  0001 C CNN
-F 3 "" H 13100 2300 50  0001 C CNN
-	1    13100 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:PINHD-1X8 JP1
-U 1 1 0B60073D
-P 15100 2300
-F 0 "JP1" H 14850 2825 59  0000 L BNN
-F 1 "PINHD-1X8" H 14850 1800 59  0000 L BNN
-F 2 "base:1X08" H 15100 2300 50  0001 C CNN
-F 3 "" H 15100 2300 50  0001 C CNN
-	1    15100 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:GND #GND05
-U 1 1 5B6A58CA
-P 11500 3200
-F 0 "#GND05" H 11500 3200 50  0001 C CNN
-F 1 "GND" H 11400 3100 59  0000 L BNN
-F 2 "" H 11500 3200 50  0001 C CNN
-F 3 "" H 11500 3200 50  0001 C CNN
-	1    11500 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L base-eagle-import:VCC #P+02
 U 1 1 637B3A6A
 P 2900 4200
@@ -1371,17 +1202,6 @@ F 1 "10R" H 12950 6070 59  0000 L BNN
 F 2 "base:0603-RES" H 13000 6000 50  0001 C CNN
 F 3 "" H 13000 6000 50  0001 C CNN
 	1    13000 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:VCC #P+06
-U 1 1 4B6CF0C8
-P 13500 1700
-F 0 "#P+06" H 13500 1700 50  0001 C CNN
-F 1 "VCC" V 13400 1600 59  0000 L BNN
-F 2 "" H 13500 1700 50  0001 C CNN
-F 3 "" H 13500 1700 50  0001 C CNN
-	1    13500 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1745,28 +1565,6 @@ F 3 "" H 1300 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:JST_2PIN-THM-RA X4
-U 1 1 BE05CED0
-P 13100 3000
-F 0 "X4" H 12850 3225 59  0000 L BNN
-F 1 "S2B-PH-K-S(LF)(SN)" H 12850 2800 59  0000 L BNN
-F 2 "base:JST-PH-2-THM-RA" H 13100 3000 50  0001 C CNN
-F 3 "" H 13100 3000 50  0001 C CNN
-	1    13100 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:VIN #VIN03
-U 1 1 73E98C85
-P 11400 1700
-F 0 "#VIN03" H 11400 1700 50  0001 C CNN
-F 1 "VIN" V 11300 1600 59  0000 L BNN
-F 2 "" H 11400 1700 50  0001 C CNN
-F 3 "" H 11400 1700 50  0001 C CNN
-	1    11400 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L base-eagle-import:VCC #P+07
 U 1 1 FAFE20BD
 P 8000 1600
@@ -1778,17 +1576,6 @@ F 3 "" H 8000 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:VCC #P+05
-U 1 1 57F4DC09
-P 18500 7550
-F 0 "#P+05" H 18500 7550 50  0001 C CNN
-F 1 "VCC" V 18600 7350 59  0000 L BNN
-F 2 "" H 18500 7550 50  0001 C CNN
-F 3 "" H 18500 7550 50  0001 C CNN
-	1    18500 7550
-	-1   0    0    -1  
-$EndComp
-$Comp
 L base-eagle-import:USD-1040310811 X2
 U 1 1 EE6A8C5B
 P 18000 5200
@@ -1798,17 +1585,6 @@ F 2 "base:1040310811" H 18000 5200 50  0001 C CNN
 F 3 "" H 18000 5200 50  0001 C CNN
 	1    18000 5200
 	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:GND #GND04
-U 1 1 12C122FD
-P 18500 9950
-F 0 "#GND04" H 18500 9950 50  0001 C CNN
-F 1 "GND" H 18400 9850 59  0000 L BNN
-F 2 "" H 18500 9950 50  0001 C CNN
-F 3 "" H 18500 9950 50  0001 C CNN
-	1    18500 9950
-	-1   0    0    -1  
 $EndComp
 $Comp
 L base-eagle-import:GND #GND06
@@ -1888,10 +1664,10 @@ F 3 "" H 10500 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:CAP0805 C12
+L base-eagle-import:CAP0805 C22
 U 1 1 0AD37B5F
 P 10500 2200
-F 0 "C12" H 10560 2315 59  0000 L BNN
+F 0 "C22" H 10560 2315 59  0000 L BNN
 F 1 "10uF" H 10560 2115 59  0000 L BNN
 F 2 "base:0805" H 10500 2200 50  0001 C CNN
 F 3 "" H 10500 2200 50  0001 C CNN
@@ -1921,32 +1697,10 @@ F 3 "" H 10500 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:VDDA #VDDA02
-U 1 1 72A79A59
-P 19000 7700
-F 0 "#VDDA02" H 19000 7700 50  0001 C CNN
-F 1 "VDDA" V 18900 7500 59  0000 L BNN
-F 2 "" H 19000 7700 50  0001 C CNN
-F 3 "" H 19000 7700 50  0001 C CNN
-	1    19000 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:CAP_POL1206 C14
-U 1 1 BF09C543
-P 18500 8550
-F 0 "C14" V 18475 8290 59  0000 L BNN
-F 1 "47uF" V 18590 8590 59  0000 L BNN
-F 2 "base:EIA3216" H 18500 8550 50  0001 C CNN
-F 3 "" H 18500 8550 50  0001 C CNN
-	1    18500 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:CAP_POL1206 C15
+L base-eagle-import:CAP_POL1206 C21
 U 1 1 6CF7C31D
 P 16100 5800
-F 0 "C15" V 16075 5540 59  0000 L BNN
+F 0 "C21" V 16075 5540 59  0000 L BNN
 F 1 "47uF" V 16190 5840 59  0000 L BNN
 F 2 "base:EIA3216" H 16100 5800 50  0001 C CNN
 F 3 "" H 16100 5800 50  0001 C CNN
@@ -2045,7 +1799,7 @@ Text Notes 15200 11200 0    100  ~ 20
 DVDD not connected, using internal regulator
 Text Notes 15200 10700 0    100  ~ 20
 Notes:
-Text Notes 11450 7250 0    300  ~ 60
+Text Notes 11500 7200 0    300  ~ 60
 IMAGE SENSOR CONNECTOR
 Text Notes 900  3800 0    300  ~ 60
 STM32F7xx MCU
@@ -2102,9 +1856,6 @@ F 3 "" H 14550 9150 50  0001 C CNN
 	1    14550 9150
 	1    0    0    -1  
 $EndComp
-Connection ~ 18500 7650
-Wire Wire Line
-	18500 7650 18500 8450
 Wire Wire Line
 	15450 8050 16000 8050
 Text Label 15450 8050 0    50   ~ 0
@@ -2122,23 +1873,23 @@ Wire Wire Line
 Wire Wire Line
 	16500 8550 16800 8550
 $Comp
-L base-eagle-import:RESISTOR0603-RES R3
+L base-eagle-import:RESISTOR0603-RES RN4B
 U 1 1 691E95C4
 P 16300 8550
-F 0 "R3" H 16400 8550 59  0000 L BNN
+F 0 "RN4B" H 16400 8550 59  0000 L BNN
 F 1 "4.7K" H 16000 8550 59  0000 L BNN
-F 2 "base:0603-RES" H 16300 8550 50  0001 C CNN
+F 2 "openmv3:EXBV4V" H 16300 8550 50  0001 C CNN
 F 3 "" H 16300 8550 50  0001 C CNN
 	1    16300 8550
 	-1   0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:RESISTOR0603-RES R4
+L base-eagle-import:RESISTOR0603-RES RN4A
 U 1 1 738A1E18
 P 16300 8750
-F 0 "R4" H 16400 8750 59  0000 L BNN
+F 0 "RN4A" H 16400 8750 59  0000 L BNN
 F 1 "4.7K" H 16000 8750 59  0000 L BNN
-F 2 "base:0603-RES" H 16300 8750 50  0001 C CNN
+F 2 "openmv3:EXBV4V" H 16300 8750 50  0001 C CNN
 F 3 "" H 16300 8750 50  0001 C CNN
 	1    16300 8750
 	-1   0    0    -1  
@@ -2193,10 +1944,10 @@ DCMI_D6
 Text Label 15450 9850 0    50   ~ 0
 DCMI_D7
 $Comp
-L base-eagle-import:RESISTOR0603-RES R11
+L base-eagle-import:RESISTOR0603-RES R3
 U 1 1 5DDF9B60
 P 12900 9750
-F 0 "R11" H 13000 9650 59  0000 L BNN
+F 0 "R3" H 13000 9650 59  0000 L BNN
 F 1 "10K" H 12650 9650 59  0000 L BNN
 F 2 "base:0603-RES" H 12900 9750 50  0001 C CNN
 F 3 "" H 12900 9750 50  0001 C CNN
@@ -2259,12 +2010,12 @@ Connection ~ 13550 9850
 Wire Wire Line
 	13550 9850 13550 10350
 $Comp
-L base-eagle-import:CAP0603-CAP C22
+L base-eagle-import:CAP0603-CAP C16
 U 1 1 5DF32C86
 P 13350 9900
-F 0 "C22" V 13425 9990 59  0000 L BNN
+F 0 "C16" V 13425 9990 59  0000 L BNN
 F 1 "0.1uF" V 13450 9650 59  0000 L BNN
-F 2 "base:0603-CAP" H 13350 9900 50  0001 C CNN
+F 2 "openmv3:0603-CAP" H 13350 9900 50  0001 C CNN
 F 3 "" H 13350 9900 50  0001 C CNN
 	1    13350 9900
 	-1   0    0    -1  
@@ -2276,12 +2027,12 @@ Wire Wire Line
 Wire Wire Line
 	13350 9450 13650 9450
 $Comp
-L base-eagle-import:CAP0603-CAP C21
+L base-eagle-import:CAP0603-CAP C17
 U 1 1 5DF6915A
 P 13150 9900
-F 0 "C21" V 13225 9990 59  0000 L BNN
+F 0 "C17" V 13225 9990 59  0000 L BNN
 F 1 "0.1uF" V 13250 9650 59  0000 L BNN
-F 2 "base:0603-CAP" H 13150 9900 50  0001 C CNN
+F 2 "openmv3:0603-CAP" H 13150 9900 50  0001 C CNN
 F 3 "" H 13150 9900 50  0001 C CNN
 	1    13150 9900
 	-1   0    0    -1  
@@ -2296,38 +2047,6 @@ Wire Wire Line
 	13650 8950 12900 8950
 Wire Notes Line
 	15100 11500 700  11500
-Text Label 17500 7900 0    70   ~ 0
-RSVD6
-Text Label 17500 7800 0    70   ~ 0
-RSVD5
-Text Label 17500 7700 0    70   ~ 0
-VDDA
-Text Label 17500 9200 0    70   ~ 0
-I2C1_SDA
-Text Label 17500 9100 0    70   ~ 0
-I2C1_SCL
-Text Label 17500 8600 0    70   ~ 0
-DCMI_D7
-Text Label 17500 8700 0    70   ~ 0
-DCMI_D6
-Text Label 17500 8800 0    70   ~ 0
-DCMI_D4
-Text Label 17500 8900 0    70   ~ 0
-DCMI_D3
-Text Label 17500 8300 0    70   ~ 0
-DCMI_VSYNC
-Text Label 17500 8400 0    70   ~ 0
-DCMI_HSYNC
-Text Label 17500 8000 0    70   ~ 0
-VCC
-Text Label 17500 7600 0    70   ~ 0
-VCC
-Text Label 17500 9300 0    70   ~ 0
-VCC
-Text Label 17500 9000 0    70   ~ 0
-VCC
-Text Label 17500 8500 0    70   ~ 0
-VCC
 Text Label 13250 8950 0    50   ~ 0
 DCMI_FSIN
 Text Label 13200 9050 0    50   ~ 0
@@ -2335,12 +2054,12 @@ DCMI_RST
 Text Label 13200 9150 0    50   ~ 0
 DCMI_PWDN
 $Comp
-L base-eagle-import:CAP0603-CAP C20
+L base-eagle-import:CAP0603-CAP C15
 U 1 1 5E02C609
 P 12600 9900
-F 0 "C20" V 12675 9990 59  0000 L BNN
+F 0 "C15" V 12675 9990 59  0000 L BNN
 F 1 "0.1uF" V 12700 9650 59  0000 L BNN
-F 2 "base:0603-CAP" H 12600 9900 50  0001 C CNN
+F 2 "openmv3:0603-CAP" H 12600 9900 50  0001 C CNN
 F 3 "" H 12600 9900 50  0001 C CNN
 	1    12600 9900
 	-1   0    0    -1  
@@ -2374,10 +2093,10 @@ F 3 "" H 12350 10450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:CAP0603-CAP C19
+L base-eagle-import:CAP0603-CAP C18
 U 1 1 5E063F93
 P 12350 9900
-F 0 "C19" V 12425 9990 59  0000 L BNN
+F 0 "C18" V 12425 9990 59  0000 L BNN
 F 1 "4.7uF" V 12450 9650 59  0000 L BNN
 F 2 "base:0603-CAP" H 12350 9900 50  0001 C CNN
 F 3 "" H 12350 9900 50  0001 C CNN
@@ -2385,23 +2104,23 @@ F 3 "" H 12350 9900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:CAP0603-CAP C18
+L base-eagle-import:CAP0603-CAP C20
 U 1 1 5E064271
 P 12100 9900
-F 0 "C18" V 12175 9990 59  0000 L BNN
+F 0 "C20" V 12175 9990 59  0000 L BNN
 F 1 "22uF" V 12200 9650 59  0000 L BNN
-F 2 "base:0603-CAP" H 12100 9900 50  0001 C CNN
+F 2 "openmv3:0805" H 12100 9900 50  0001 C CNN
 F 3 "" H 12100 9900 50  0001 C CNN
 	1    12100 9900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:CAP0603-CAP C17
+L base-eagle-import:CAP0603-CAP C19
 U 1 1 5E065313
 P 11850 9900
-F 0 "C17" V 11925 9990 59  0000 L BNN
+F 0 "C19" V 11925 9990 59  0000 L BNN
 F 1 "0.1uF" V 11950 9650 59  0000 L BNN
-F 2 "base:0603-CAP" H 11850 9900 50  0001 C CNN
+F 2 "openmv3:0603-CAP" H 11850 9900 50  0001 C CNN
 F 3 "" H 11850 9900 50  0001 C CNN
 	1    11850 9900
 	-1   0    0    -1  
@@ -2435,12 +2154,12 @@ Wire Wire Line
 Wire Wire Line
 	11850 10350 11850 10000
 $Comp
-L base-eagle-import:RESISTOR0603-RES R6
+L base-eagle-import:RESISTOR0603-RES R4
 U 1 1 5E0BB5CC
 P 12350 7850
-F 0 "R6" H 12300 7700 59  0000 L BNN
+F 0 "R4" H 12300 7700 59  0000 L BNN
 F 1 "10K" H 12300 7950 59  0000 L BNN
-F 2 "base:0603-RES" H 12350 7850 50  0001 C CNN
+F 2 "openmv3:0603-RES" H 12350 7850 50  0001 C CNN
 F 3 "" H 12350 7850 50  0001 C CNN
 	1    12350 7850
 	0    1    -1   0   
@@ -2459,12 +2178,12 @@ F 3 "" H 11600 10450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:CAP_POL1206 C16
+L base-eagle-import:CAP_POL1206 C12
 U 1 1 5E0FBA1D
 P 11600 9000
-F 0 "C16" V 11575 8740 59  0000 L BNN
+F 0 "C12" V 11575 8740 59  0000 L BNN
 F 1 "47uF" V 11690 9040 59  0000 L BNN
-F 2 "base:EIA3216" H 11600 9000 50  0001 C CNN
+F 2 "openmv3:EIA3216" H 11600 9000 50  0001 C CNN
 F 3 "" H 11600 9000 50  0001 C CNN
 	1    11600 9000
 	1    0    0    -1  
@@ -2536,4 +2255,16 @@ F 3 "" H 15100 12900 50  0001 C CNN
 	2    15100 12900
 	1    0    0    -1  
 $EndComp
+Text Label 9300 8300 0    70   ~ 0
+TIM4_CH3
+Wire Wire Line
+	9000 8300 9800 8300
+Text Label 9300 8200 0    70   ~ 0
+TIM4_CH2
+Wire Wire Line
+	9000 8200 9800 8200
+Text Label 9300 8100 0    70   ~ 0
+TIM4_CH1
+Wire Wire Line
+	9000 8100 9800 8100
 $EndSCHEMATC
