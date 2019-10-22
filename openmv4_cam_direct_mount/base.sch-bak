@@ -1873,10 +1873,10 @@ Wire Wire Line
 Wire Wire Line
 	16500 8550 16800 8550
 $Comp
-L base-eagle-import:RESISTOR0603-RES RN4B
+L base-eagle-import:RESISTOR0603-RES RN4B1
 U 1 1 691E95C4
 P 16300 8550
-F 0 "RN4B" H 16400 8550 59  0000 L BNN
+F 0 "RN4B1" H 16400 8550 59  0000 L BNN
 F 1 "4.7K" H 16000 8550 59  0000 L BNN
 F 2 "openmv3:EXBV4V" H 16300 8550 50  0001 C CNN
 F 3 "" H 16300 8550 50  0001 C CNN
@@ -1884,10 +1884,10 @@ F 3 "" H 16300 8550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:RESISTOR0603-RES RN4A
+L base-eagle-import:RESISTOR0603-RES RN4A1
 U 1 1 738A1E18
 P 16300 8750
-F 0 "RN4A" H 16400 8750 59  0000 L BNN
+F 0 "RN4A1" H 16400 8750 59  0000 L BNN
 F 1 "4.7K" H 16000 8750 59  0000 L BNN
 F 2 "openmv3:EXBV4V" H 16300 8750 50  0001 C CNN
 F 3 "" H 16300 8750 50  0001 C CNN
@@ -2267,4 +2267,63 @@ Text Label 9300 8100 0    70   ~ 0
 TIM4_CH1
 Wire Wire Line
 	9000 8100 9800 8100
+$Comp
+L XF2M-1015-1A:XF2M-1015-1A J?
+U 1 1 5DBF5F14
+P 12750 1850
+F 0 "J?" H 13200 2115 50  0000 C CNN
+F 1 "XF2M-1015-1A" H 13200 2024 50  0000 C CNN
+F 2 "XF2M-1015-1A" H 13500 1950 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" H 13500 1850 50  0001 L CNN
+F 4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" H 13500 1750 50  0001 L CNN "Description"
+F 5 "" H 13500 1650 50  0001 L CNN "Height"
+F 6 "Omron Electronics" H 13500 1550 50  0001 L CNN "Manufacturer_Name"
+F 7 "XF2M-1015-1A" H 13500 1450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "653-XF2M-1015-1A" H 13500 1350 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" H 13500 1250 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7315772P" H 13500 1150 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7315772P" H 13500 1050 50  0001 L CNN "RS Price/Stock"
+F 12 "70667825" H 13500 950 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" H 13500 850 50  0001 L CNN "Allied Price/Stock"
+	1    12750 1850
+	1    0    0    -1  
+$EndComp
+Text Label 13650 1850 0    50   ~ 0
+GND
+Wire Wire Line
+	13650 1850 13850 1850
+Wire Wire Line
+	13650 1950 13850 1950
+Wire Wire Line
+	13650 2050 13850 2050
+Wire Wire Line
+	13650 2150 13850 2150
+Wire Wire Line
+	13650 2250 13850 2250
+Wire Wire Line
+	12750 2250 12500 2250
+Wire Wire Line
+	12750 2150 12500 2150
+Wire Wire Line
+	12750 2050 12500 2050
+Wire Wire Line
+	12750 1950 12500 1950
+Wire Wire Line
+	12750 1850 12500 1850
+NoConn ~ 13850 2050
+NoConn ~ 13850 2150
+Text Label 13650 2250 0    50   ~ 10
+PWR_EN
+Text Label 12500 1850 0    50   ~ 10
+VCC
+Text Label 12500 1950 0    50   ~ 10
+MOSI_1
+Text Label 12500 2050 0    50   ~ 10
+CS_1
+Text Label 12500 2150 0    50   ~ 10
+MISO_1
+Text Label 12500 2250 0    50   ~ 10
+SCK_1
+Text Label 13650 1950 0    50   ~ 10
+BATT_N
 $EndSCHEMATC
