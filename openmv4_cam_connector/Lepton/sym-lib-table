@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name LEPTON-eagle-import)(type Legacy)(uri ${KIPRJMOD}/LEPTON-eagle-import.lib)(options "")(descr ""))
-)

@@ -925,17 +925,6 @@ F 3 "" H 16400 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L base-eagle-import:GND #GND013
-U 1 1 85B66688
-P 16100 6300
-F 0 "#GND013" H 16100 6300 50  0001 C CNN
-F 1 "GND" H 16000 6200 59  0000 L BNN
-F 2 "" H 16100 6300 50  0001 C CNN
-F 3 "" H 16100 6300 50  0001 C CNN
-	1    16100 6300
-	-1   0    0    -1  
-$EndComp
-$Comp
 L base-eagle-import:4R-NEXBV8V RN3
 U 1 1 AC081E65
 P 16700 5300
@@ -2288,10 +2277,6 @@ F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/706678
 	1    12750 1850
 	1    0    0    -1  
 $EndComp
-Text Label 13650 1850 0    50   ~ 0
-GND
-Wire Wire Line
-	13650 1850 13850 1850
 Wire Wire Line
 	13650 1950 13850 1950
 Wire Wire Line
@@ -2314,8 +2299,6 @@ NoConn ~ 13850 2050
 NoConn ~ 13850 2150
 Text Label 13650 2250 0    50   ~ 0
 PWR_EN
-Text Label 12500 1850 0    50   ~ 0
-VCC
 Text Label 12500 1950 0    50   ~ 0
 SPI2_MOSI
 Text Label 12500 2050 0    50   ~ 0
@@ -2326,4 +2309,41 @@ Text Label 12500 2250 0    50   ~ 0
 SPI2_SCLK
 Text Label 13650 1950 0    50   ~ 0
 BATT_N
+$Comp
+L base-eagle-import:VCC #P+?
+U 1 1 5DB9CD98
+P 12500 1500
+F 0 "#P+?" H 12500 1500 50  0001 C CNN
+F 1 "VCC" V 12400 1400 59  0000 L BNN
+F 2 "" H 12500 1500 50  0001 C CNN
+F 3 "" H 12500 1500 50  0001 C CNN
+	1    12500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 1850 12500 1600
+$Comp
+L base-eagle-import:GND #GND013
+U 1 1 85B66688
+P 16100 6300
+F 0 "#GND013" H 16100 6300 50  0001 C CNN
+F 1 "GND" H 16000 6200 59  0000 L BNN
+F 2 "" H 16100 6300 50  0001 C CNN
+F 3 "" H 16100 6300 50  0001 C CNN
+	1    16100 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L base-eagle-import:GND #GND?
+U 1 1 5DBBFD41
+P 14300 1950
+F 0 "#GND?" H 14300 1950 50  0001 C CNN
+F 1 "GND" H 14200 1850 59  0000 L BNN
+F 2 "" H 14300 1950 50  0001 C CNN
+F 3 "" H 14300 1950 50  0001 C CNN
+	1    14300 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 1850 14300 1850
 $EndSCHEMATC

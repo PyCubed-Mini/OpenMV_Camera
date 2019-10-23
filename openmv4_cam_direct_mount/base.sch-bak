@@ -2312,18 +2312,18 @@ Wire Wire Line
 	12750 1850 12500 1850
 NoConn ~ 13850 2050
 NoConn ~ 13850 2150
-Text Label 13650 2250 0    50   ~ 10
+Text Label 13650 2250 0    50   ~ 0
 PWR_EN
-Text Label 12500 1850 0    50   ~ 10
+Text Label 12500 1850 0    50   ~ 0
 VCC
-Text Label 12500 1950 0    50   ~ 10
-MOSI_1
-Text Label 12500 2050 0    50   ~ 10
-CS_1
-Text Label 12500 2150 0    50   ~ 10
-MISO_1
-Text Label 12500 2250 0    50   ~ 10
-SCK_1
-Text Label 13650 1950 0    50   ~ 10
+Text Label 12500 1950 0    50   ~ 0
+SPI2_MOSI
+Text Label 12500 2050 0    50   ~ 0
+SPI2_NSS
+Text Label 12500 2150 0    50   ~ 0
+SPI2_MISO
+Text Label 12500 2250 0    50   ~ 0
+SPI2_SCLK
+Text Label 13650 1950 0    50   ~ 0
 BATT_N
 $EndSCHEMATC
