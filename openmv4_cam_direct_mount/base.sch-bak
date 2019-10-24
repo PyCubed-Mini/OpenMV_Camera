@@ -639,14 +639,7 @@ Wire Wire Line
 	5800 1900 5100 1900
 Wire Wire Line
 	5100 1900 5100 1700
-Wire Wire Line
-	5800 2000 5100 2000
-Wire Wire Line
-	5100 2000 5100 1900
-Wire Wire Line
-	5100 2000 5100 2100
 Connection ~ 5100 1900
-Connection ~ 5100 2000
 Text Label 5800 1900 0    10   ~ 0
 RAW
 Wire Wire Line
@@ -923,17 +916,6 @@ F 2 "" H 16400 4200 50  0001 C CNN
 F 3 "" H 16400 4200 50  0001 C CNN
 	1    16400 4200
 	1    0    0    -1  
-$EndComp
-$Comp
-L base-eagle-import:GND #GND013
-U 1 1 85B66688
-P 16100 6300
-F 0 "#GND013" H 16100 6300 50  0001 C CNN
-F 1 "GND" H 16000 6200 59  0000 L BNN
-F 2 "" H 16100 6300 50  0001 C CNN
-F 3 "" H 16100 6300 50  0001 C CNN
-	1    16100 6300
-	-1   0    0    -1  
 $EndComp
 $Comp
 L base-eagle-import:4R-NEXBV8V RN3
@@ -2154,19 +2136,6 @@ Wire Wire Line
 Wire Wire Line
 	11850 10350 11850 10000
 $Comp
-L base-eagle-import:RESISTOR0603-RES R4
-U 1 1 5E0BB5CC
-P 12350 7850
-F 0 "R4" H 12300 7700 59  0000 L BNN
-F 1 "10K" H 12300 7950 59  0000 L BNN
-F 2 "openmv3:0603-RES" H 12350 7850 50  0001 C CNN
-F 3 "" H 12350 7850 50  0001 C CNN
-	1    12350 7850
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	12350 9700 12350 8150
-$Comp
 L base-eagle-import:GND #GND0108
 U 1 1 5E0FB61A
 P 11600 10450
@@ -2202,7 +2171,7 @@ F 3 "" H 11600 7350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	13650 8250 12100 8250
+	13650 8250 12350 8250
 Connection ~ 11600 8250
 Wire Wire Line
 	11600 8250 11600 8900
@@ -2216,23 +2185,6 @@ Wire Wire Line
 Connection ~ 12100 8250
 Wire Wire Line
 	12100 8250 11850 8250
-Wire Wire Line
-	13650 8150 12350 8150
-Connection ~ 12350 8150
-Wire Wire Line
-	13650 8050 12350 8050
-Connection ~ 12350 8050
-Wire Wire Line
-	12350 7650 12350 7600
-Wire Wire Line
-	12350 7600 11600 7600
-Wire Wire Line
-	11600 7600 11600 8250
-Wire Wire Line
-	11600 7600 11600 7450
-Wire Wire Line
-	12350 8050 12350 8150
-Connection ~ 11600 7600
 $Comp
 L openmv3-eagle-import:LENSMOUNT20MM LM1
 U 1 1 5DAA9666
@@ -2288,10 +2240,6 @@ F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/706678
 	1    12750 1850
 	1    0    0    -1  
 $EndComp
-Text Label 13650 1850 0    50   ~ 0
-GND
-Wire Wire Line
-	13650 1850 13850 1850
 Wire Wire Line
 	13650 1950 13850 1950
 Wire Wire Line
@@ -2310,20 +2258,95 @@ Wire Wire Line
 	12750 1950 12500 1950
 Wire Wire Line
 	12750 1850 12500 1850
-NoConn ~ 13850 2050
-NoConn ~ 13850 2150
-Text Label 13650 2250 0    50   ~ 0
+Text Label 12750 2050 2    50   ~ 0
 PWR_EN
-Text Label 12500 1850 0    50   ~ 0
-VCC
-Text Label 12500 1950 0    50   ~ 0
+Text Label 13850 2150 0    50   ~ 0
 SPI2_MOSI
-Text Label 12500 2050 0    50   ~ 0
+Text Label 13850 2050 0    50   ~ 0
 SPI2_NSS
 Text Label 12500 2150 0    50   ~ 0
 SPI2_MISO
 Text Label 12500 2250 0    50   ~ 0
 SPI2_SCLK
-Text Label 13650 1950 0    50   ~ 0
+Text Label 13850 1950 0    50   ~ 0
 BATT_N
+$Comp
+L base-eagle-import:VCC #P+?
+U 1 1 5DB9CD98
+P 12500 1500
+F 0 "#P+?" H 12500 1500 50  0001 C CNN
+F 1 "VCC" V 12400 1400 59  0000 L BNN
+F 2 "" H 12500 1500 50  0001 C CNN
+F 3 "" H 12500 1500 50  0001 C CNN
+	1    12500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 1850 12500 1600
+$Comp
+L base-eagle-import:GND #GND013
+U 1 1 85B66688
+P 16100 6300
+F 0 "#GND013" H 16100 6300 50  0001 C CNN
+F 1 "GND" H 16000 6200 59  0000 L BNN
+F 2 "" H 16100 6300 50  0001 C CNN
+F 3 "" H 16100 6300 50  0001 C CNN
+	1    16100 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 1850 14400 1850
+$Comp
+L base-eagle-import:GND #GND?
+U 1 1 5DBBFD41
+P 14400 1950
+F 0 "#GND?" H 14400 1950 50  0001 C CNN
+F 1 "GND" H 14300 1850 59  0000 L BNN
+F 2 "" H 14400 1950 50  0001 C CNN
+F 3 "" H 14400 1950 50  0001 C CNN
+	1    14400 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11600 7450 11600 8250
+Wire Wire Line
+	12350 8250 12350 9700
+Connection ~ 12350 8250
+Wire Wire Line
+	12350 8250 12100 8250
+$Comp
+L base-eagle-import:VDDA #VDDA?
+U 1 1 5DB943C2
+P 12950 7650
+F 0 "#VDDA?" H 12950 7650 50  0001 C CNN
+F 1 "VDDA" V 12850 7650 59  0000 L BNN
+F 2 "" H 12950 7650 50  0001 C CNN
+F 3 "" H 12950 7650 50  0001 C CNN
+	1    12950 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 8050 12950 8050
+Wire Wire Line
+	13650 8150 12950 8150
+Connection ~ 12950 8050
+Wire Wire Line
+	12950 8050 12950 8150
+Wire Wire Line
+	5100 1900 5100 2100
+Text Label 5550 2000 0    50   ~ 0
+PWR_EN
+Wire Wire Line
+	5800 2000 5550 2000
+$Comp
+L base-eagle-import:RESISTOR0603-RES R?
+U 1 1 5DB4BD49
+P 12950 7850
+F 0 "R?" H 12900 7709 59  0000 L BNN
+F 1 "0" H 12900 7920 59  0000 L BNN
+F 2 "base:0603-RES" H 12950 7850 50  0001 C CNN
+F 3 "" H 12950 7850 50  0001 C CNN
+	1    12950 7850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
