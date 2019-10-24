@@ -1,11 +1,18 @@
-# Snap on Trigger
-#
+'''
+### Snap on Trigger
+## Allan Shtofenmakher
+# Spacecraft Design Lab
+
 # Take a photo with the camera and communicate data over SPI to microcontroller with the intention
-# of saving in to the SD card
-#
+# of saving it to the SD card
+
 # Note: Do NOT run this code without an SD card attached.
-#
+
 # Project Start Date: 10 October 2019
+# Last Updated: 22 October 2019
+
+'''
+
 
 # import relevant libraries
 import sensor, image, pyb
@@ -20,20 +27,30 @@ BLUE_LED_PIN = 3
 pyb.LED(RED_LED_PIN).on()
 
 # set up digital SPI interface, with camera as slave and MCU as master
+# spi = SPI(2, SPI.MASTER, baudrate = 115200, polarity=1, phase=0)  # use in case MASTER is needed
 spi = SPI(2, SPI.SLAVE, polarity=0, phase=0)
-# spi = SPI(2, SPI.MASTER, baudrate = 115200, polarity=1, phase=0)
+
+# define chip-select switch (P3) as pull-up
 pyb.Pin("P3", pyb.Pin.IN, pull=pyb.Pin.PULL_UP)
 
-# spi.send(b'heyyy')  # respond
-# spi.send('hello')
+# prepare buffer
 buf = bytearray(5)
+
+# print for troubleshooting:
 # print(buf)
 
-# spi.recv(buf)  # for receive only
+# some experimental code:
+# spi.send(b'heyyy')  # send five-byte string
+# spi.send('hello')  # doesn't work because of lack of preceding 'b'
+# spi.recv(buf)  # for receiving only
+# print(buf)  # for troubleshooting
+
+# send AND receive five-byte string
 spi.send_recv(b'heyyy', buf)
 
-# print(buf)
 print(''.join(chr(b) for b in buf))
+
+# for troubleshooting, print out the individual bytes of the buffer one at a time
 # for i in range(5):
 #     print(buf[i])
 
@@ -44,7 +61,7 @@ pyb.LED(RED_LED_PIN).off()
 sensor.reset() # initialize the camera sensor
 sensor.set_pixformat(sensor.RGB565) # or sensor.GRAYSCALE
 sensor.set_framesize(sensor.VGA) # or sensor.QVGA (or others)
-sensor.skip_frames(time = 500) # let new settings take effect
+sensor.skip_frames(time = 2500) # let new settings take effect
 
 # flash light to signal camera activation
 pyb.LED(BLUE_LED_PIN).on()
@@ -53,7 +70,7 @@ pyb.LED(BLUE_LED_PIN).on()
 print("Taking photo . . . ")
 
 # actually take photo
-sensor.snapshot()#.save("example.jpg") # or "example.bmp" (or others)
+sensor.snapshot()#.compress(90).save("example90.jpg") # or "example90.bmp" (or others)
 
 # print completion message to serial monitor
 print("Done!")
