@@ -787,26 +787,6 @@ X VIN 1 0 0 100 U 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# openmv3-eagle-import_LENSMOUNT20MM
-#
-DEF openmv3-eagle-import_LENSMOUNT20MM ~ 0 40 Y Y 1 L N
-F0 "" 0 0 50 H I C CNN
-F1 "openmv3-eagle-import_LENSMOUNT20MM" 0 0 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C -600 0 100 1 0 10 N
-C 0 0 424 1 0 10 N
-C 600 0 100 1 0 10 N
-P 2 1 0 0 -500 -500 -500 500 N
-P 2 1 0 0 -500 500 500 500 N
-P 2 1 0 0 500 -500 -500 -500 N
-P 2 1 0 0 500 500 500 -500 N
-X P$1 P$1 -600 0 100 R 50 50 1 0 W
-X P$2 P$2 600 0 100 L 50 50 1 0 W
-ENDDRAW
-ENDDEF
-#
 # openmv3-eagle-import_OV7725
 #
 DEF openmv3-eagle-import_OV7725 ~ 0 40 Y Y 1 L N
