@@ -1,37 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# XF2M-1015-1A_XF2M-1015-1A
-#
-DEF XF2M-1015-1A_XF2M-1015-1A J 0 30 Y Y 1 F N
-F0 "J" 750 300 50 H V L CNN
-F1 "XF2M-1015-1A_XF2M-1015-1A" 750 200 50 H V L CNN
-F2 "XF2M-1015-1A" 750 100 50 H I L CNN
-F3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" 750 0 50 H I L CNN
-F4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" 750 -100 50 H I L CNN "Description"
-F5 "Omron Electronics" 750 -300 50 H I L CNN "Manufacturer_Name"
-F6 "XF2M-1015-1A" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
-F7 "653-XF2M-1015-1A" 750 -500 50 H I L CNN "Mouser Part Number"
-F8 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" 750 -600 50 H I L CNN "Mouser Price/Stock"
-F9 "7315772P" 750 -700 50 H I L CNN "RS Part Number"
-F10 "http://uk.rs-online.com/web/p/products/7315772P" 750 -800 50 H I L CNN "RS Price/Stock"
-F11 "70667825" 750 -900 50 H I L CNN "Allied_Number"
-F12 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" 750 -1000 50 H I L CNN "Allied Price/Stock"
-DRAW
-P 5 0 1 6 200 100 700 100 700 -500 200 -500 200 100 N
-X 1 1 0 0 200 R 50 50 0 0 U
-X 10 10 900 -400 200 L 50 50 0 0 U
-X 2 2 900 0 200 L 50 50 0 0 U
-X 3 3 0 -100 200 R 50 50 0 0 U
-X 4 4 900 -100 200 L 50 50 0 0 U
-X 5 5 0 -200 200 R 50 50 0 0 U
-X 6 6 900 -200 200 L 50 50 0 0 U
-X 7 7 0 -300 200 R 50 50 0 0 U
-X 8 8 900 -300 200 L 50 50 0 0 U
-X 9 9 0 -400 200 R 50 50 0 0 U
-ENDDRAW
-ENDDEF
-#
 # base-eagle-import_4R-NEXBV8V
 #
 DEF base-eagle-import_4R-NEXBV8V RN 0 40 Y Y 4 L N
@@ -787,11 +756,11 @@ X VIN 1 0 0 100 U 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# openmv3-eagle-import_OV7725
+# base-rescue_OV7725-openmv3-eagle-import
 #
-DEF openmv3-eagle-import_OV7725 ~ 0 40 Y Y 1 L N
+DEF base-rescue_OV7725-openmv3-eagle-import ~ 0 40 Y Y 1 L N
 F0 "" -700 1300 127 H V L BNN
-F1 "openmv3-eagle-import_OV7725" -100 -1000 127 H V L BNN
+F1 "base-rescue_OV7725-openmv3-eagle-import" -100 -1000 127 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -827,6 +796,37 @@ X XCLK F3 900 1100 200 L 0 50 1 0 B
 X DOGND F4 -900 -700 200 R 0 50 1 0 W
 X D2 F5 900 0 200 L 0 50 1 0 B
 X D8 F6 900 -600 200 L 0 50 1 0 B
+ENDDRAW
+ENDDEF
+#
+# base-rescue_XF2M-1015-1A-XF2M-1015-1A
+#
+DEF base-rescue_XF2M-1015-1A-XF2M-1015-1A J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "base-rescue_XF2M-1015-1A-XF2M-1015-1A" 750 200 50 H V L CNN
+F2 "XF2M-1015-1A" 750 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" 750 0 50 H I L CNN
+F4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" 750 -100 50 H I L CNN "Description"
+F5 "Omron Electronics" 750 -300 50 H I L CNN "Manufacturer_Name"
+F6 "XF2M-1015-1A" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "653-XF2M-1015-1A" 750 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" 750 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "7315772P" 750 -700 50 H I L CNN "RS Part Number"
+F10 "http://uk.rs-online.com/web/p/products/7315772P" 750 -800 50 H I L CNN "RS Price/Stock"
+F11 "70667825" 750 -900 50 H I L CNN "Allied_Number"
+F12 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" 750 -1000 50 H I L CNN "Allied Price/Stock"
+DRAW
+P 5 0 1 6 200 100 700 100 700 -500 200 -500 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 U
+X 10 10 900 -400 200 L 50 50 0 0 U
+X 2 2 900 0 200 L 50 50 0 0 U
+X 3 3 0 -100 200 R 50 50 0 0 U
+X 4 4 900 -100 200 L 50 50 0 0 U
+X 5 5 0 -200 200 R 50 50 0 0 U
+X 6 6 900 -200 200 L 50 50 0 0 U
+X 7 7 0 -300 200 R 50 50 0 0 U
+X 8 8 900 -300 200 L 50 50 0 0 U
+X 9 9 0 -400 200 R 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
