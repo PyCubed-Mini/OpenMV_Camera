@@ -1,4 +1,5 @@
 MOTIVATION:
+
 - Focusing the lens enables the Qube to take pictures of faraway objects, like the Earth, with clarity
 - The quality trade study helps us determine what image compression level is best for ensuring that the images the Qube takes are of sufficient quality without being too large
 - The time delay trade studies help us understand how much time we need for certain operations and how this translates into power consumption
