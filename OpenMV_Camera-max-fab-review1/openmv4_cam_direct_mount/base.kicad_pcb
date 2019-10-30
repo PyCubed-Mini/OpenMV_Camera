@@ -14,13 +14,13 @@
     (0 Top signal)
     (1 GND signal hide)
     (2 VCC signal hide)
-    (31 Bottom signal)
+    (31 Bottom signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user hide)
-    (37 F.SilkS user)
+    (37 F.SilkS user hide)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user hide)
@@ -473,6 +473,11 @@
       (net 116 "Net-(R4-Pad2)") (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -0.85 0 90) (size 1.1 1) (layers Top F.Paste F.Mask)
       (net 109 VDDA) (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module openmv3:0603-CAP (layer Bottom) (tedit 0) (tstamp 5DAFA751)
@@ -736,6 +741,11 @@
       (net 34 "Net-(LED3-PadC)") (solder_mask_margin 0.0762))
     (pad A smd rect (at -1.6 0 270) (size 1.2 1.4) (layers Top F.Paste F.Mask)
       (net 110 "Net-(LED2-PadC)") (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_1206_3216Metric.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module base:LED-1206 (layer Top) (tedit 0) (tstamp 5DADF1BE)
@@ -762,6 +772,11 @@
       (net 110 "Net-(LED2-PadC)") (solder_mask_margin 0.0762))
     (pad A smd rect (at -1.6 0 90) (size 1.2 1.4) (layers Top F.Paste F.Mask)
       (net 3 VCC) (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_1206_3216Metric.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module base:0805 (layer Top) (tedit 0) (tstamp 5DADEFFF)
@@ -1391,6 +1406,11 @@
       (net 17 "Net-(Q1-Pad1)") (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -0.85 0 270) (size 1.1 1) (layers Top F.Paste F.Mask)
       (net 1 GND) (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module base:EXBV8V (layer Top) (tedit 0) (tstamp 5DA50CA9)
@@ -1447,6 +1467,11 @@
       (net 20 "Net-(LED1-PadG)") (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -1.2 0.775 270) (size 0.45 0.7) (layers Top F.Paste F.Mask)
       (net 21 "Net-(LED1-PadR)") (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_Array_Convex_4x0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module base:EIA3216 (layer Top) (tedit 0) (tstamp 5DA50CF0)
@@ -1637,6 +1662,11 @@
       (net 1 GND) (solder_mask_margin 0.0762))
     (pad 3 smd rect (at 0 -1.1) (size 0.8 0.9) (layers Top F.Paste F.Mask)
       (net 18 "Net-(Q1-Pad3)") (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module base:0603-CAP (layer Top) (tedit 0) (tstamp 5DA4FFA3)
