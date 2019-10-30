@@ -14,7 +14,7 @@
     (0 Top signal)
     (1 GND signal hide)
     (2 VCC signal hide)
-    (31 Bottom signal hide)
+    (31 Bottom signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
@@ -645,6 +645,11 @@
       (net 38 /I2C1_SCL) (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -0.4 0.775 270) (size 0.45 0.7) (layers Top F.Paste F.Mask)
       (net 3 VCC) (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_Array_Concave_2x0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module openmv3:EXBV4V (layer Top) (tedit 0) (tstamp 5DAEB7CD)
@@ -681,6 +686,11 @@
       (net 37 /I2C1_SDA) (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -0.4 0.775 90) (size 0.45 0.7) (layers Top F.Paste F.Mask)
       (net 3 VCC) (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_Array_Concave_2x0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module base:SOT23-5 (layer Top) (tedit 0) (tstamp 5DADF68A)
@@ -1348,6 +1358,16 @@
       (net 96 "Net-(U1-Pad2)") (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -7.72 -6) (size 0.9 0.3) (layers Top F.Paste F.Mask)
       (net 97 /LED_IR) (solder_mask_margin 0.0762))
+    (model "C:/Program Files/KiCad/share/kicad/modules/Package_QFP.pretty/LQFP-100_14x14mm_P0.5mm.kicad_mod"
+      (offset (xyz 10 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
+    (model C:/Users/nickg/Desktop/AA236/OpenMV_Camera/OpenMV_Camera-max-fab-review1/Custom_CAD_Components/LQFP100.STEP
+      (offset (xyz -7 -7 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module base:0603-CAP (layer Top) (tedit 0) (tstamp 5DA5146E)
@@ -1496,6 +1516,11 @@
       (net 3 VCC) (solder_mask_margin 0.0762))
     (pad C smd rect (at -1.4 0) (size 1.6 1.4) (layers Top F.Paste F.Mask)
       (net 1 GND) (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-3216-12_Kemet-S.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module base:0603-RES (layer Top) (tedit 0) (tstamp 5DA50155)
@@ -1525,6 +1550,11 @@
       (net 34 "Net-(LED3-PadC)") (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -0.85 0 270) (size 1.1 1) (layers Top F.Paste F.Mask)
       (net 18 "Net-(Q1-Pad3)") (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module base:EXBV8V (layer Top) (tedit 0) (tstamp 5DA4FFEA)
