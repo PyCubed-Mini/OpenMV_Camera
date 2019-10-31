@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 80)
+    (drawings 96)
     (tracks 775)
     (zones 0)
     (modules 58)
@@ -1359,9 +1359,14 @@
     (pad 1 smd rect (at -7.72 -6) (size 0.9 0.3) (layers Top F.Paste F.Mask)
       (net 97 /LED_IR) (solder_mask_margin 0.0762))
     (model "C:/Program Files/KiCad/share/kicad/modules/Package_QFP.pretty/LQFP-100_14x14mm_P0.5mm.kicad_mod"
-      (at (xyz 0 0 0))
+      (offset (xyz 10 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
+    )
+    (model C:/Users/nickg/Desktop/AA236/OpenMV_Camera/OpenMV_Camera-max-fab-review1/Custom_CAD_Components/LQFP100.STEP
+      (offset (xyz -7 -7 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -2504,6 +2509,22 @@
       (net 43 /SPI3_SCLK/TRACESWO) (solder_mask_margin 0.0762))
   )
 
+  (gr_line (start 196.199999 113.399999) (end 179.199999 113.399999) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 179.199999 96.4) (end 196.199999 96.4) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 171.3 130.2) (end 169.699999 130.199999) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 169.699999 130.199999) (end 169.699999 88.2) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 179.199999 113.399999) (end 179.199999 96.4) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 171.3 131.8) (end 171.3 130.2) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 196.199999 96.4) (end 196.199999 113.399999) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 169.699999 88.2) (end 171.3 88.2) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 204.099998 130.199999) (end 204.099998 131.8) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 205.699999 88.2) (end 205.699998 130.199999) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 205.699998 130.199999) (end 204.099998 130.199999) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 171.3 86.6) (end 204.099998 86.6) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 204.099998 131.8) (end 171.3 131.8) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 204.099998 88.2) (end 205.699999 88.2) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 204.099998 86.6) (end 204.099998 88.2) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 171.3 88.2) (end 171.3 86.6) (layer Edge.Cuts) (width 0.2))
   (gr_text v00 (at 165.80612 112.8776 90) (layer F.SilkS) (tstamp 5DB39B0D)
     (effects (font (size 0.77216 0.77216) (thickness 0.16256)) (justify left bottom))
   )
