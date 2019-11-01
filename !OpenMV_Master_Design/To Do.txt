@@ -1,0 +1,15 @@
+>Make sure SD card doesn't hang out side of board when inserted
+	- Confirm we need SD card
+
+>Move camera to correct position on board (According to mechanical design)
+
+>Create new edge cuts to match mechanical design
+
+>Add all 3D components to model
+
+>Put connector (to main board) on opposite side to camera
+
+>Remove unneeded design features (from original design)
+
+>Change debug header to small surface mount type
+
