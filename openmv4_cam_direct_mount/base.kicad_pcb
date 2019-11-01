@@ -444,6 +444,11 @@
       (net 1 GND))
     (pad 1 smd rect (at -2.25 0 90) (size 0.25 1.1) (layers Bottom B.Paste B.Mask)
       (net 117 "Net-(J5-Pad1)"))
+    (model ${CUSTOM_FOOTPRINT_DIR}/3d/XF2M-1015-1A.stp
+      (offset (xyz 0 -4.8768 -0.0254))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 180))
+    )
   )
 
   (module base:0603-RES (layer Top) (tedit 0) (tstamp 5DB1727D)
@@ -604,6 +609,11 @@
       (net 56 /DCMI_RST) (solder_mask_margin 0.0762))
     (pad A1 smd roundrect (at -2 1.85 180) (size 0.34 0.34) (layers Bottom B.Paste B.Mask) (roundrect_rratio 0.5)
       (net 116 "Net-(R4-Pad2)") (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Package_LGA.3dshapes/Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1.7 1.7 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module openmv3:EXBV4V (layer Top) (tedit 0) (tstamp 5DAEB7E5)
@@ -1333,6 +1343,11 @@
       (net 96 "Net-(U1-Pad2)") (solder_mask_margin 0.0762))
     (pad 1 smd rect (at -7.72 -6) (size 0.9 0.3) (layers Top F.Paste F.Mask)
       (net 97 /LED_IR) (solder_mask_margin 0.0762))
+    (model ${KISYS3DMOD}/Package_QFP.3dshapes/LQFP-100_14x14mm_P0.5mm.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module base:0603-CAP (layer Top) (tedit 0) (tstamp 5DA5146E)
