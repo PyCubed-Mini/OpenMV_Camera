@@ -5,11 +5,16 @@
 
 >Create new edge cuts to match mechanical design
 
->Add all 3D components to model
-
 >Put connector (to main board) on opposite side to camera
+>Flip connector direction around (so it faces outward)
 
->Remove unneeded design features (from original design)
+>Remove unneeded design features (from original OpenMV design)
+>Remove redundant components
 
 >Change debug header to small surface mount type
+
+>Fix silk screen (correct labels etc)
+
+>Check resistor types are correct (multi vs single etc)
+
 
