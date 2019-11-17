@@ -17,4 +17,6 @@
 
 >Check resistor types are correct (multi vs single etc)
 
+> USB on camera side of board
+
 
