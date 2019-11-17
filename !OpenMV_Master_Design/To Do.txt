@@ -21,4 +21,8 @@
 
 > Consider swapping out resistor arrays RN2 and RN3 (connected to SD card)
 
+> Remove "Edge cuts" which show camera position
+
+> Fix GND and VCC layers
+
 
