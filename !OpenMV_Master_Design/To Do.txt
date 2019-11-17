@@ -1,27 +1,12 @@
 >Make sure SD card doesn't hang out side of board when inserted
 	- Confirm we need SD card
 
->Move camera to correct position on board (According to mechanical design)
-
->Create new edge cuts to match mechanical design
-
->Put connector (to main board) on opposite side to camera
->Flip connector direction around (so it faces outward)
-
 >Remove unneeded design features (from original OpenMV design)
 >Remove redundant components
 
 >Change debug header to small surface mount type
 
 >Fix silk screen (correct labels etc)
-
->Check resistor types are correct (multi vs single etc)
-
-> USB on camera side of board
-
-> Consider swapping out resistor arrays RN2 and RN3 (connected to SD card)
-
-> Remove "Edge cuts" which show camera position
 
 > Fix GND and VCC layers
 

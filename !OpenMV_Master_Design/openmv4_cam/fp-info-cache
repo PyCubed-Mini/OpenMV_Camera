@@ -1,190 +1,214 @@
-42416572362645
-openmv3
-1X05
+47169330376883
+base
+1X06
 <b>PIN HEADER</b>
 
 0
-5
-5
-openmv3
+6
+6
+base
 1X08
 <b>PIN HEADER</b>
 
 0
 8
 8
-openmv3
+base
 2,8-PAD
 <b>MOUNTING PAD</b> 2.8 mm, round
 
 0
 1
 1
-openmv3
+base
 0603
 
 
 0
 2
 2
-openmv3
+base
 0603-CAP
 
 
 0
 2
 2
-openmv3
+base
 0603-RES
 
 
 0
 2
 2
-openmv3
+base
 0805
 
 
 0
 2
 2
-openmv3
+base
+1007
+1007 (2518 metric) package
+
+0
+2
+2
+base
+1040310811
+
+
+0
+14
+14
+base
+9774030151R
+
+
+0
+1
+1
+base
 CRYSTAL-2.5X2.0
 
 
 0
 4
 4
-openmv3
-CSP2-28
+base
+DF12-36-DS
 
 
 0
-28
-28
-openmv3
+38
+38
+base
 EIA3216
 
 
 0
 2
 2
-openmv3
-EXBV4V
-<b>Chip Resistor Array 0603x2</b> 2 resistors in 1.60 mm x 1.60 mm size<p>
-Source: PANASONIC .. aoc0000ce1.pdf
-0
-0
-4
-4
-openmv3
+base
 EXBV8V
 <b>Chip Resistor Array 0603x4</b> 4 resistors in 3.20 mm x 1.60 mm size<p>
-0
-0
+Source: PANASONIC .. aoc0000ce1.pdf
+
 0
 8
 8
-openmv3
-FIDUCIAL-1X2
+base
+JST-PH-2-THM-RA
+<b>S2B-PH-K-S</b> 
+<p>
+JST PH 2-pin thru-home side entry
+
 0
-0
-0
-1
-1
-openmv3
-HTSOP-J8
-0
-0
-0
-9
-9
-openmv3
+2
+2
+base
 LED-1206
-0
-0
+
+
 0
 2
 2
-openmv3
+base
 LED-TRICOLOR-SMD-MF
-0
-0
+
+
 0
 4
 4
-openmv3
-LENSMOUNT-20MM
-0
-0
-0
-2
-2
-openmv3
+base
 LQFP100
-0
-0
+<b>Low Profile Quad Flat Pack</b>
+
 0
 100
 100
-openmv3
+base
 MICROUSB-RIGHT
-0
-0
+<b>Description:</b> Package for Micro USB Type B connector. Based on FCI 10118193-0001LF.<br>
+
 0
 11
 11
-openmv3
+base
 OMV-LOGO
+
+
 0
 0
 0
+base
+OMV-LOGO-BIG
+
+
 0
 0
-openmv3
+0
+base
 OMV-LOGO-SMALL
+
+
 0
 0
 0
-0
-0
-openmv3
+base
 OSHW_FILLX100_NOTEXT
+
+
 0
 0
 0
-0
-0
-openmv3
+base
 ROHS
+
+
 0
 0
 0
+base
+SOD-323
+
+
 0
-0
-openmv3
-SOT23
-0
-0
-0
-3
-3
-openmv3
+2
+2
+base
 SOT23-3
-0
-0
+
+
 0
 3
 3
-openmv3
-USD-47571
+base
+SOT23-5
+<b>Small Outline Transistor</b>
+
 0
+5
+5
+base
+TSOT25
+
+
 0
-0
-13
-13
-openmv3
+5
+5
+base
 WEEE
+
+
 0
 0
 0
+base
+XF2M-1015-1A
+XF2M-1015-1A
+Connector
+0
+12
+12
