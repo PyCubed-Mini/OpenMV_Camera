@@ -19,4 +19,6 @@
 
 > USB on camera side of board
 
+> Consider swapping out resistor arrays RN2 and RN3 (connected to SD card)
+
 
