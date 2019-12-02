@@ -1,13 +1,9 @@
->Make sure SD card doesn't hang out side of board when inserted
-	- Confirm we need SD card
+>Confirm we need SD card
 
 >Remove unneeded design features (from original OpenMV design)
 >Remove redundant components
 
 >Change debug header to small surface mount type
 
->Fix silk screen (correct labels etc)
-
-> Fix GND and VCC layers
 
 
