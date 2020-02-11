@@ -1,4 +1,4 @@
-# Untitled - By: Keiko Nagami - Sat Feb 8 2020
+# image_compression_tile.py - By: Keiko Nagami - Sat Feb 8 2020
 
 # import relevant libraries
 import sensor, image
