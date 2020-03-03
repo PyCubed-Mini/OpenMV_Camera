@@ -13,29 +13,33 @@ sensor.set_gainceiling(8)
 img = sensor.snapshot() # Take a picture and return the image.
 img.save("edges.jpg")
 
-#load in image
-#with open('earth3.jpg', 'rb') as f:
-#    img_data = f.read()
+# determine orientation
+lt = img.get_pixel(0,0) #top left
+rt = img.get_pixel(img.width()-1,0) #top right
+lb = img.get_pixel(0,img.height()-1) #bottom left
+rb = img.get_pixel(img.width()-1,img.height()-1) #bottom right
+pix = [lt,rt,lb,rb]
 
-#img = image.Image(1920,758, sensor.GRAYSCALE)
-#n=0
-#for i in range(0,1920):
-#    for j in range(0,758):
-#        img[n] = img_data[n]
-#        n = n+1
+max1 = max(pix)
+pix.remove(max1)
+max2 = max(pix)
+
+if (max1 == lb and max2 == rb) or (max2 == lb and max1 == rb):
+    orient = 0 #horizontal, earth on bottom
+elif (max1 == lb and max2 == lt) or (max2 == lb and max1 == lt):
+    orient = 1 #vertical, earth to left
+elif (max1 == rb and max2 == rt) or (max2 == rb and max1 == rt):
+    orient = 2 #vertical, earth to right
+else:
+    orient = 3 #horizontal, earth on top
 
 # Determine threshold
-hist = img.get_histogram()
-upperthresh = hist.get_threshold()
-upperthresh = math.floor(1.2*upperthresh.value())
-lowerthresh = math.floor(0.8*upperthresh)
+upperthresh = img.get_histogram().get_threshold().value()
+#upperthresh = hist.get_threshold()
+upperthresh = math.floor(upperthresh)
+lowerthresh = math.floor(0.6*upperthresh)
 # Use Canny edge detector
 img.find_edges(image.EDGE_CANNY, threshold=(lowerthresh, upperthresh))
-#img.save("edges.jpg")
-print('success!')
-# Faster simpler edge detection
-#img.find_edges(image.EDGE_SIMPLE, threshold=(100, 255))
-#img.save('edges.jpg')
 
 # find indices for horizon pixels
 xval = []
@@ -48,6 +52,10 @@ for i in range(0,img.width()):
             xval.append(i)
             yval.append(j)
             n = n + 1
+
+if n<100:
+    print("not enough edges")
+    exit()
 
 xsum = sum(xval)
 ysum = sum(yval)
@@ -75,12 +83,28 @@ h = 400
 d = ((Re+h)**2-Re**2)**(1/2)
 alpha0 = math.degrees(math.atan(Re/(Re+h)))
 
-# pitch
-alpha1 = (img.height()/2 - ymean)/img.height()*14
-alpha = alpha1 + alpha0
-
-# yaw
-psi = math.degrees(math.atan(a))
+if orient == 0:
+    alpha1 = (ymean - img.height()/2)/img.height()*14
+    alpha = alpha1 + alpha0 #pitch
+    psi = math.degrees(math.atan(a)) #yaw
+elif orient == 1:
+    alpha1 = (img.width()/2 + xmean)/img.width()*18.8
+    alpha = alpha1 + alpha0 #pitch
+    if a>0:
+        psi = math.degrees(math.atan(a)) #yaw
+    else:
+        psi = 180 + math.degrees(math.atan(a)) #yaw
+elif orient == 2:
+    alpha1 = (xmean - img.width()/2)/img.width()*18.8
+    alpha = alpha1 + alpha0 #pitch
+    if a>0:
+        psi = 360 - math.degrees(math.atan(a)) #yaw
+    else:
+        psi = 180 - math.degrees(math.atan(a)) #yaw
+else:
+    alpha1 = (img.height()/2 - ymean)/img.height()*14
+    alpha = alpha1 + alpha0 #pitch
+    psi = 180 + math.degrees(math.atan(a)) #yaw
 
 print(alpha)
 print(psi)
