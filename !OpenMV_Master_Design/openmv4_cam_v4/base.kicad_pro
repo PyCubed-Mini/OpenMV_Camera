@@ -392,7 +392,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "../../../base.step",
-      "vrml": "../../../base.wrl"
+      "vrml": "../../../base.step"
     },
     "page_layout_descr_file": ""
   },
